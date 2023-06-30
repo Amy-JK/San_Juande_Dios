@@ -1,0 +1,1708 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+    --swiper-navigation-size: 55px;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+  } */
+
+.header {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    align-items: center;
+}
+
+.logo {
+    width: 350px;
+    padding: 30px 0 0 30px;
+    object-fit: contain;
+}
+
+.header nav {
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+}
+
+.header ul li {
+    list-style-type: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.header .link a:hover {
+    border-bottom: 3px solid white;
+}
+
+.li-active a{
+    border-bottom: 3px solid white;
+}
+
+.header .fa-instagram:hover, .header .fa-square-facebook:hover {
+    transform: scale(1.2);
+}
+
+.menu-button {
+    display: none;
+}
+
+.drop-menu-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.379);
+    position: fixed;
+    z-index: 150;
+    display: none;
+}
+
+.drop-menu {
+    left: -800px;
+    height: 100vh;
+    width: 70vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 150;
+    color: white;
+    display: none;
+}
+
+.drop-menu-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+    align-items: center;
+}
+
+.drop-menu h2 {
+    font-size: 1.4rem;
+}
+
+.drop-menu ul {
+    padding: 30px;
+}
+
+.drop-menu ul li {
+    font-size: 1.3rem;
+    padding: 12px;
+    list-style: none;
+    transition: 0.4s all;
+}
+
+.drop-menu ul li:hover {
+    padding-left: 30px;
+}
+
+.drop-menu .fa-house, .drop-menu .fa-calendar-days, .drop-menu .fa-image, .drop-menu .fa-user, .drop-menu .fa-phone {
+    color: white;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.fa-xmark, .fa-bars {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.fa-xmark:hover, .fa-bars:hover {
+    transform: scale(1.2);
+}
+
+.drop-menu-open {
+    animation: dropMenuAnimationOpen .4s forwards;
+}
+
+.drop-menu-closed {
+    animation: dropMenuAnimationClose .4s forwards;
+}
+
+.drop-menu-container-show {
+    display: inline-block;
+}
+
+.drop-menu-container-hide {
+    display: none;
+}
+
+.fa-square-facebook, .fa-instagram, .fa-newspaper, .fa-location-crosshairs, .fa-location-dot, .fa-envelope, .fa-phone, .fa-bars {
+    color: white;
+    font-size: 1.4em;
+    margin: 5px;
+}
+
+.fa-clock, .fa-user, .fa-image, .fa-location-dot2, .fa-envelope2, .fa-phone2 {
+    color: black;
+    font-size: 1.4em;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.pages-main {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.pages-main-info {
+    display: flex;
+    margin: 70px 0 0 0;
+    flex-direction: column;
+}
+
+.pages-main h1 {
+    color: white;
+    font-size: 6rem;
+    line-height: 1.25;
+    text-shadow: 1px 1px 2px black;
+}
+
+.main-header-b {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686709279/iglesia-san-juan-de-dios/main-b_vaukcu.jpg");
+    background-color: rgba(0, 0, 0, 0.066);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.events-main-header-b {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1687061926/iglesia-san-juan-de-dios/rosario-b_wpeazr.jpg");
+    background-color: rgba(0, 0, 0, 0.379);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-main-header-b {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1687062690/iglesia-san-juan-de-dios/gallery-b_zcrrfa.jpg");
+    background-color: rgba(0, 0, 0, 0.379);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-main-header-b {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1687063875/iglesia-san-juan-de-dios/nosotros-b_xfk4q0.jpg");
+    background-color: rgba(0, 0, 0, 0.379);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-main-header-b {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686801408/iglesia-san-juan-de-dios/nosotros-img2_iwbmyu.jpg");
+    background-color: rgba(0, 0, 0, 0.379);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Home */
+
+
+.home {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.home-info {
+    display: flex;
+    margin: 150px 0 0 0;
+    flex-direction: column;
+}
+
+.home h1 {
+    color: white;
+    font-size: 5rem;
+    line-height: 1.25;
+    text-shadow: 1px 1px 2px black;
+}
+
+.home h2 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+/* News */
+
+.home-news {
+    width: 100% !important;
+    height: 900px !important;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.home-news-header {
+    height: 160px;
+    width: 100%;
+}
+
+.home-news-header hr {
+    max-width: 250px;
+}
+
+.home-news-header h2 {
+    font-size: 2rem;
+    margin-left: 5px;
+}
+
+.home-news-header-container {
+    padding: 60px 0 0 30px;
+}
+
+.home-news-header-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.swiper-news {
+    width: 1200px;
+    height: 650px;
+    position: relative;
+    animation: opacityEffect linear;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide {
+    display: flex !important;
+    padding: 0 70px 40px 70px;
+}
+
+.swiper-img {
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.si1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(to top, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686619580/iglesia-san-juan-de-dios/gran-kerm%C3%A9s_p5dpjz.png');
+}
+
+.si2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(to top, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686798566/iglesia-san-juan-de-dios/bazar-img_y3myvr.jpg');
+}
+
+.si3 {
+    background: linear-gradient(to top, black 5%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686799321/iglesia-san-juan-de-dios/doctor-img_painji.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.si4 {
+    background: linear-gradient(to top, black 5%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686800722/iglesia-san-juan-de-dios/tienda-img_k0m7lu.png');
+    background-size: cover;
+}
+
+.si5 {
+    background: linear-gradient(to top, black 5%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686974926/iglesia-san-juan-de-dios/urnas-img_rjxhsh.jpg');
+    background-size: cover;
+}
+
+.slider-revert {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.swiper-button-next {
+    color: white !important;
+    animation: arrowSliderNextEffect 1s infinite alternate;
+}
+
+.swiper-button-prev {
+    color: white !important;
+    animation: arrowSliderPrevEffect 1s infinite alternate;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+    --swiper-pagination-bullet-size: 13px;
+}
+
+.swiper-pagination-bullet {
+    width: 20px !important;
+    border-radius: 0 !important;
+    height: 5px !important;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255) !important;
+    --swiper-pagination-bullet-size: 13px;
+} 
+
+.slider-container div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.swiper-info {
+    padding: 30px;
+}
+
+.swiper-info h3 {
+    font-size: 2rem;
+}
+
+.swiper-info p {
+    color: rgb(206, 206, 206);
+    margin-bottom: 5px;
+}
+
+.swiper-info span {
+    color: rgb(123, 122, 122);
+}
+
+.swiper-button {
+    display: none;
+    margin-top: 10px;
+}
+.swiper-button button {
+    border: 2px solid white;
+    padding: 5px;
+    background-color: white;
+}
+
+/* Home - Nosotros / Nosotros */
+
+
+.home-about-info, .about-donaciones-info, .about-dispensario-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 750px;
+}
+
+.about-despensas-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 750px;
+}
+
+.home-about-header, .about-donaciones-header, .about-despensas-header, .about-dispensario-header {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.home-about-header-info, .about-donaciones-header-info, .about-despensas-header-info, .about-dispensario-header-info {
+    display: flex;
+    align-items: center;
+}
+
+.home-about-header h2, .about-donaciones-header h2, .about-despensas-header h2, .about-dispensario-header h2 {
+    font-size: 2rem;
+}
+
+.home-about-header hr, .about-donaciones-header hr, .about-despensas-header hr, .about-dispensario-header hr {
+    width: 300px;
+    height: 3px;
+    background-color: black;
+}
+
+.home-about-img {
+    width: 50vw;
+    height: 100%;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686801406/iglesia-san-juan-de-dios/nosotros-img1_yntijs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-about-container-text, .about-despensas-container-text, .about-donaciones-container-text, .about-dispensario-container-text {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-donaciones-text, .about-despensas-text, .about-dispensario-text, .home-about-text {
+    width: 70%;
+}
+
+.home-about-text button {
+    font-size: 0.9rem;
+    padding: 12px;
+    border: 3px solid black;
+    background-color: black;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+
+.home-about-text button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Home - Horarios */
+
+.home-schedule-container {
+    width: 100%;
+    height: 850px;
+    align-items: center;
+    background: rgb(249, 245, 231);
+    justify-content: center;
+}
+
+.tablas_info {
+    width: 100%;
+    height: 160px;
+}
+
+.tablas_info_header {
+    padding-left: 30px;
+    padding-top: 60px;
+}
+
+.tablas_info_title {
+    display: flex;
+    align-items: center;
+}
+
+.tablas_titulo{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.tablas_info hr {
+    width: 350px;
+    height: 3px;
+    background-color: black;
+}
+
+caption{
+    padding: 0.5em;
+}
+
+.tablas_contenido{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tabla_misas{
+    background: transparent;
+    color: black;
+    border-collapse: collapse;
+    font-size: 1em;
+    margin: 10px 60px; 
+}
+
+.tabla_misas thead{
+    background: transparent;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.tabla_misas td, th{
+    border: none;
+    padding: 5px 5px;
+    word-wrap: break-word;
+    width: 300px;
+}
+
+.tabla_confesiones{
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border-collapse: collapse;
+    font-size: 1em;
+    margin: 10px 60px;
+    text-align: center;
+}
+
+.tabla_confesiones thead{
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.tabla_confesiones td, th{
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.tablas_img_container {
+    display: flex;
+    align-items: center;
+}
+
+.tablas_imagen{
+    width: 300px;
+    height: 400px;
+}
+
+
+/* Eventos */
+
+
+.home-events-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 580px;
+    justify-content: center;
+    text-align: center;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686972189/iglesia-san-juan-de-dios/wedding-img_etmiuf.jpg");
+    background-color: rgba(0, 0, 0, 0.44);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-events-text h2 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 1px 1px black;
+}
+
+.home-events-text button {
+    font-size: 0.9rem;
+    padding: 12px;
+    width: 120px;
+    border: 3px solid black;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.home-events-text button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Gallery */
+
+.home-gallery {
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-gallery-slider2 {
+    display: none;
+}
+
+.home-gallery-header {
+    width: 100%;
+    height: 160px;
+}
+
+.home-gallery-header-container {
+    padding-left: 30px;
+    padding-top: 60px;
+}
+
+.home-gallery-header-info {
+    display: flex;
+    align-items: center;
+}
+
+.home-gallery-header h2 {
+    font-size: 2rem;
+}
+
+.home-gallery-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper-gallery {
+    height: 350px;
+    width: 1200px;
+}
+
+.home-gallery-header hr {
+    width: 320px;
+    height: 3px;
+    background-color: black;
+}
+
+.ss-gallery {
+    width: 40% !important;
+    background-color: aqua;
+}
+
+.home-gallery .swiper-pagination-bullet-active {
+    background-color: black !important;
+    --swiper-pagination-bullet-size: 13px;
+}
+
+.home-gallery .swiper-pagination-bullet {
+    width: 20px !important;
+    border-radius: 0 !important;
+    height: 5px !important;
+    overflow: hidden;
+    background-color: white !important;
+    --swiper-pagination-bullet-size: 13px;
+} 
+
+.home-gallery a {
+    text-align: center;
+}
+
+.home-gallery button {
+    font-size: 0.9rem;
+    padding: 12px;
+    border: 3px solid black;
+    background-color: black;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: 1s all;
+    margin-top: 40px;
+}
+
+.home-gallery button:hover {
+    background-color: white;
+    color: black;
+}
+
+.slider-gallery div:nth-child(1) {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686974272/iglesia-san-juan-de-dios/gallery-img1_juahsl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+}
+
+.slider-gallery div:nth-child(2) {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686974272/iglesia-san-juan-de-dios/gallery-img2_vdqfyy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+}
+
+.slider-gallery div:nth-child(3) {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686974272/iglesia-san-juan-de-dios/gallery-img3_hrejrc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+}
+
+.slider-gallery div:nth-child(4) {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686974818/iglesia-san-juan-de-dios/gallery-img4_gecf7x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -30px;
+}
+
+.slider-gallery div:nth-child(5) {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686974270/iglesia-san-juan-de-dios/gallery-img5_btnc59.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -200px;
+}
+
+.slider-gallery div:nth-child(6) {
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686974385/iglesia-san-juan-de-dios/gallery-img6_zhzhsb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -200px;
+}
+
+/* Contact */ 
+
+.home-contact {
+    height: 600px;
+    width: 100%;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686977312/iglesia-san-juan-de-dios/vitral-b_sbjxrb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.489);
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    color: white;
+}
+
+.home-contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.home-contact-header {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.home-contact-text {
+    margin-right: 50px;
+}
+
+.home-contact-header hr {
+    height: 3px;
+    background-color: white;
+}
+
+.home-contact-header h2 {
+    font-size: 2rem;
+}
+
+.home-contact-header-info {
+    display: flex;
+    align-items: center;
+}
+
+.home-contact-data {
+    display: flex;
+    margin-top: 20px;
+    max-width: 300px;
+    align-items: center;
+}
+
+.home-contact-icon {
+    margin-right: 30px;
+}
+
+.greyText {
+    color: rgb(76, 76, 76) !important;
+}
+
+
+/* Events */
+
+.header-events {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 202, 149);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header-events ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header-events li {
+    list-style: none;
+    padding: 20px;
+}
+
+.header-events li a {
+    color: black;
+    font-size: 1.1rem;
+    transition: 0.4s all;
+}
+
+.header-events li a:hover {
+    color: white;
+}
+
+.warn-free {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 25;
+}
+
+.warn-free-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warn-free i {
+    margin: 8px;
+}
+
+.warn-free h3 {
+    color: rgb(199, 4, 4);
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+.warn-free p {
+    font-size: 1.1rem;
+    max-width: 80%;
+}
+
+.events {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1687231126/iglesia-san-juan-de-dios/ladrillosBlancos-b_ptnpbe.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 20;
+    position: relative;
+}
+
+.events h3 {
+    font-size: 3rem;
+}
+
+.events-container-info {
+    width: 700px;
+    height: 100%;
+    padding: 60px;
+}
+
+.events-container-header, .events-details, .events-container-time, .events-container-ul {
+    margin-bottom: 40px;
+}
+
+.events-container-info p, .events-container-info li {
+    font-size: 1.2rem;
+}
+
+.events-container-requirements li {
+    margin-left: 50px;
+}
+
+.bautizo-container {
+    width: 1300px;
+    height: 85%;
+    background: linear-gradient(to right, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1687230643/iglesia-san-juan-de-dios/bautizo-img_suqgo4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boda-container {
+    width: 1300px;
+    height: 85%;
+    background: linear-gradient(to right, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1687232179/iglesia-san-juan-de-dios/boda1_giylho.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quinceAnos-container {
+    width: 1300px;
+    height: 85%;
+    background: linear-gradient(to right, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1687232177/iglesia-san-juan-de-dios/XV_anos_k5y6mq.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.presentacion-container {
+    width: 1300px;
+    height: 85%;
+    background: linear-gradient(to right, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1687233898/iglesia-san-juan-de-dios/presentacion_yivrm4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.primeraComunion-container {
+    width: 1300px;
+    height: 85%;
+    background: linear-gradient(to right, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1687232762/iglesia-san-juan-de-dios/primera-comunion-img_qnkk90.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Gallery */
+
+.gallery {
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1687236250/iglesia-san-juan-de-dios/white-b_fyt9ja.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-group {
+    text-align: center;
+}
+
+.gallery-container {
+    width: 450px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.gallery-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.gallery-container img:hover{
+    transform: scale(1.2);
+}
+
+/* About */
+
+.about-history {
+    height: 900px;
+    width: 100%;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1687236250/iglesia-san-juan-de-dios/white-b_fyt9ja.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-history-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-history-img {
+    width: 50%;
+    height: 100%;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1687925053/iglesia-san-juan-de-dios/iglesia2_ifevyv.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+.about-history-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 90vw;
+    height: 100%;
+    text-align: justify;
+}
+
+.about-history-text p {
+    width: 80%;
+}
+
+.about-history-header hr {
+    height: 3px;
+    background-color: black;
+    width: 30%;
+}
+
+.about-avatar {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1686801406/iglesia-san-juan-de-dios/nosotros-img1_yntijs.jpg");
+    background-color: rgba(0, 0, 0, .9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    color: white;
+}
+
+.about-avatar-img {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border: 4px solid white;
+    border-radius: 100%;
+}
+
+.about-avatar-info {
+    margin-left: 100px;
+    width: 30%;
+}
+
+.about-avatar-header, .about-history-header {
+    margin-bottom: 30px;
+}
+
+.about-avatar-header hr {
+    background-color: white;
+    height: 3px;
+}
+
+.about-donaciones-img {
+    width: 50vw;
+    height: 100%;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1687928827/iglesia-san-juan-de-dios/donaciones-img1_racca9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.about-despensas-img {
+    width: 50vw;
+    height: 100%;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1687928707/iglesia-san-juan-de-dios/despensas_jxgchr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-dispensario-img {
+    width: 50vw;
+    height: 100%;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1688100168/iglesia-san-juan-de-dios/dispensario-img_kyotmm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-frase{
+    font-size: x-small;
+    text-align: center;
+    font-style: italic;
+    color: rgba(8, 0, 123, 0.582);
+}
+
+/* Contact */
+
+.contact {
+    height: 600px;
+    width: 100%;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1687236250/iglesia-san-juan-de-dios/white-b_fyt9ja.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.);
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact-data {
+    display: flex;
+    margin-top: 20px;
+    max-width: 300px;
+    align-items: center;
+}
+
+.contact-icon {
+    margin-right: 30px;
+}
+
+.contact-header {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.contact-header hr {
+    height: 5px;
+    background-color: black;
+}
+
+.contact-header h2 {
+    font-size: 2rem;
+}
+
+.contact-warn {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(231, 202, 149);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-warn-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-warn-text p {
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.contact-warn-text span {
+    color: rgba(60, 60, 60, 0.914);
+    font-size: 1.4rem;
+}
+
+.fa-circle-question {
+    font-size: 2.5rem;
+    padding: 10px;
+    color: rgba(14, 7, 54, 0.897)
+}
+
+.map {
+    border: 5px black solid;
+}
+
+.map iframe {
+    height: 350px;
+}
+
+/* Footer */
+
+.footer {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.footer-links ul {
+    margin-top: 25px;
+}
+
+.footer-links li {
+    list-style: none;
+    margin-top: 2px;
+    color: rgb(190, 189, 189);
+}
+
+.footer-links li:hover {
+    border-bottom: 2px solid white;
+}
+
+.footer-img {
+    width: 500px;
+    text-align: center;
+}
+
+.footer-img img {
+    width: 400px;
+}
+
+.footer-copyright {
+    background-color: black;
+    color: rgba(213, 211, 211, 0.655);
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+
+
+
+/* Keyframes */ 
+
+@keyframes arrowSliderNextEffect {
+    from {padding-right: 15px;}
+    to {padding-right: 0}
+}
+
+@keyframes arrowSliderPrevEffect {
+    from {padding-left: 15px;}
+    to {padding-right: 0}
+}
+
+@keyframes opacityEffect {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes dropMenuAnimationOpen {
+    0% {left: -800px;}
+    100% {left: 0px;}
+}
+
+@keyframes dropMenuAnimationClose {
+    0% {left: 0px;}
+    100% {left: -800px;}
+}
+
+/* Media */
+
+@media (max-width: 1800px) {
+    .about-history-info {
+        justify-content: center;
+        align-items: center;
+    }
+    .about-history-text {
+        align-items: center;
+    }
+    .about-history-img {
+        width: 0;
+    }
+    .about-history-header hr {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .home-news {
+        height: 950px;
+    }
+    .swiper-news {
+        width: 90%;
+    }
+    .slider {
+        width: 100%;
+    }
+    .home-gallery-slider {
+        display: none;
+    }
+    .home-gallery-slider2 {
+        display: inline-block;
+    }
+    .home-gallery {
+        height: 650px;
+    }
+    .swiper-gallery2 {
+        height: 300px;
+        width: 70%;
+    }
+    .slider-gallery div {
+        background-position-y: 0 !important;
+    }
+    .swiper-gallery2 .swiper-slide {
+        width: 250px !important;
+    }
+    .slider-gallery div:nth-child(1) {
+        margin-left: 30px !important;
+    }
+    .tablas_imagen {
+        width: 0;
+    }
+    #bautizo {
+        height: 800px;
+    }
+    .events {
+        height: 850px;
+    }
+    .bautizo-container, .boda-container, .quinceAnos-container, .presentacion-container, .primeraComunion-container {
+        width: 95%;
+    }
+    .events-container-info {
+        width: 100%;
+        padding: 30px;
+    }
+    .contact {
+        flex-direction: column;
+        height: 800px;
+    }
+    .about-donaciones-info, .about-dispensario-info, .about-despensas-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 1000px;
+    }
+    .about-donaciones-img, .about-despensas-img, .about-dispensario-img {
+        width: 100%;
+        height: 60%;
+    }
+    .about-donaciones-container-text, .about-dispensario-container-text, .about-despensas-container-text {
+        width: 100%;
+        height: 100%;
+    }
+    .about-donaciones-text, .about-dispensario-text, .about-despensas-text {
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .drop-menu {
+        display: inline-block;
+        width: 40vw;
+    }
+
+    .header {
+        background-color: rgba(0, 0, 0, 0.927);
+    }
+    .header ul {
+        display: none;
+    }
+    .logo {
+        width: 300px;
+        padding: 30px;
+    }
+    .menu-button {
+        display: inline-block;
+    }
+    .pages-main {
+        align-items: center;
+    }
+    .pages-main-info {
+        margin: 0;
+    }
+    .main-header-b, .events-main-header-b, .gallery-main-header-b, .about-main-header-b, .contact-main-header-b {
+        background: none;
+    }
+    .home {
+        background: url("https://res.cloudinary.com/federicog/image/upload/v1686709279/iglesia-san-juan-de-dios/main-b_vaukcu.jpg");
+        background-color: rgba(0, 0, 0, 0.379);
+        background-blend-mode: soft-light;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .events-main {
+        background: url("https://res.cloudinary.com/federicog/image/upload/v1687061926/iglesia-san-juan-de-dios/rosario-b_wpeazr.jpg");
+        background-color: rgba(0, 0, 0, 0.379);
+        background-blend-mode: soft-light;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .gallery-main {
+        background: url("https://res.cloudinary.com/federicog/image/upload/v1687062690/iglesia-san-juan-de-dios/gallery-b_zcrrfa.jpg");
+        background-color: rgba(0, 0, 0, 0.379);
+        background-blend-mode: soft-light;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .about-main {
+        background: url("https://res.cloudinary.com/federicog/image/upload/v1687063875/iglesia-san-juan-de-dios/nosotros-b_xfk4q0.jpg");
+        background-color: rgba(0, 0, 0, 0.379);
+        background-blend-mode: soft-light;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .contact-main {
+        background: url("https://res.cloudinary.com/federicog/image/upload/v1686801408/iglesia-san-juan-de-dios/nosotros-img2_iwbmyu.jpg");
+        background-color: rgba(0, 0, 0, 0.379);
+        background-blend-mode: soft-light;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .home-contact {
+        height: 900px; 
+    }
+    .home-contact-info {
+        flex-direction: column;
+    }
+    .home-contact-text {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .home-contact-map {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .home-about-info {
+        height: 900px;
+        flex-direction: column-reverse;
+    }
+    .home-about-img {
+        width: 100%;
+        height: 70vh;
+    }
+    .home-about-container-text {
+        width: 100%;
+        height: 100%;
+    }
+    .home-about-text-p1 {
+        font-size: 0;
+    }
+    .home-about-header {
+        width: 100%;
+    }
+    .home-schedule-container {
+        height: 1200px;
+    }
+    .tablas_contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tabla_misas, .tabla_confesiones {
+        width: 75%;
+    }
+    .tabla_confesiones {
+        margin-top: 50px;
+    }
+    .tabla_confesiones td, th {
+        padding: 10px;
+    }
+    .tabla_misas td, th {
+        padding: 15px;
+    }
+    .home-gallery-header h2 {
+        font-size: 1.5rem;
+    }
+    .home-gallery-header hr {
+        width: 280px;
+    }
+    .header-events li {
+        padding: 10px;
+    }
+    .about-history {
+        height: 1000px;
+    }
+    .about-avatar {
+        flex-direction: column;
+        height: 600px;
+    }
+    .about-avatar-info {
+        margin-left: 0;
+        margin-top: 50px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .drop-menu {
+        display: inline-block;
+        width: 70vw;
+    }
+    .pages-main {
+        height: 280px;
+    }
+    .pages-main h1 {
+        font-size: 4rem;
+    }
+    .swiper-gallery2 .swiper-slide {
+        width: 300px !important;
+    }
+    .swiper-gallery2 {
+        height: 300px;
+        width: 100%;
+    }
+    .swiper-info-text {
+        display: none;
+    }
+    .swiper-button {
+        display: inline-block;
+    }
+    .swiper-slide {
+        padding: 0;
+    }
+    .swiper-info hr {
+        width: 90% !important;
+    }
+    .swiper-info {
+        margin-bottom: 20px;
+    }
+    .swiper-info h3 {
+        font-size: 1.5rem;
+    }
+    .tablas_info hr {
+        width: 280px;
+    }
+    .home-schedule-container {
+        height: 1200px;
+    }
+    .tabla_misas td, th {
+        padding: 8px;
+    }
+    .home-contact-header h2 {
+        font-size: 1.5rem;
+    }
+    .footer {
+        height: 400px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-links h4 {
+        font-size: 0;
+    }
+    .footer-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-link {
+        padding: 6px;
+    }
+    .footer-img {
+        width: 100%;
+    }
+    .footer-img img {
+        width: 280px;
+    }
+    .footer-authors {
+        display: flex;
+    }
+    .footer-authors div {
+        margin: 5px;
+    }
+    .footer-copyright {
+        font-size: 0.9rem;
+    }
+    .footer-authors div{
+        margin: 30px;
+    }
+    #bautizo {
+        height: 950px;
+    }
+    .warn-free {
+        height: 200px;
+    }
+    .map {
+        width: 80%;
+    }
+    .map iframe {
+        width: 100%;
+    }
+    .about-history {
+        height: 1200px;
+    }
+    .about-history-text {
+        width: 100%;
+    }
+    .about-avatar {
+        flex-direction: column;
+        height: 700px;
+    }
+    .about-avatar-info {
+        margin-left: 0;
+        margin-top: 50px;
+        width: 80%;
+    }
+    .about-donaciones-info, .about-dispensario-info, .about-despensas-info {
+        height: 1350px;
+    }
+}
+
+@media (max-width: 525px) {
+
+    .header {
+        height: 100px;
+    }
+    .header nav {
+        padding-right: 20px;
+    }
+    .logo {
+        width: 200px;
+        padding: 20px;
+    }
+    .pages-main {
+        height: 200px;
+    }
+    .pages-main h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .home-about-info {
+        height: 1100px;
+    }
+    .map iframe {
+        height: 450px;
+    }
+    .contact .map iframe {
+        height: 350px;
+    }
+    .home h1 {
+        font-size: 3.5rem;
+    }
+    .tablas_titulo {
+        font-size: 1.3rem;
+    }
+    .home-schedule-container {
+        height: 1300px;
+    }
+    .home-about-header hr, .about-donaciones-header hr, .about-despensas-header hr, .about-dispensario-header hr {
+        width: 240px;
+    }
+    .footer-authors div{
+        margin: 15px;
+    }
+    .gallery-container {
+        width: 95%;
+        height: 310px;
+    }
+    #bautizo {
+        height: 1000px;
+    }
+    .warn-free {
+        height: 200px;
+    }
+    .contact-warn {
+        height: 200px;
+    }
+    .contact-warn-text p{
+        font-size: 1rem;
+    }
+    .about-history {
+        height: 1700px;
+    }
+    .about-donaciones-info, .about-dispensario-info, .about-despensas-info {
+        height: 1800px;
+    }
+}
+
+@media (max-width: 425px) {
+    .home-schedule-container {
+        height: 1500px;
+    }
+    .events h3{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    #bautizo {
+        height: 1180px;
+    }
+}

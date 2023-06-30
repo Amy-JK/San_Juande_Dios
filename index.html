@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content=""> -->
+    <!-- <meta name="keywords" content=""> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="https://res.cloudinary.com/federicog/image/upload/v1688101032/iglesia-san-juan-de-dios/favicon_u2u2cm.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio | San Juan de Dios</title>
+
+</head>
+
+<body>
+
+    <div class="drop-menu-container" id="dropMenuContainer">
+    </div>
+
+    <div class="drop-menu" id="dropMenu">
+        <div class="drop-menu-header">
+            <h2>Menu</h2>
+            <span id="btnClose"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <ul>
+            <li class="link"><a href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li class="link"><a href="./pages/events.html"><i class="fa-solid fa-calendar-days"></i> Eventos</a></li>
+            <li class="link"><a href="./pages/gallery.html"><i class="fa-solid fa-image"></i> Galería</a></li>
+            <li class="link"><a href="./pages/about.html"><i class="fa-solid fa-user"></i> Nosotros</a></li>
+            <li class="link"><a href="./pages/contact.html"><i class="fa-solid fa-phone"></i> Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="main-header-b">
+        <header class="header">
+            <div class="logo-container">
+                <img class="logo"
+                    src="https://res.cloudinary.com/federicog/image/upload/v1686709453/iglesia-san-juan-de-dios/logo01_zagcsr.png"
+                    alt="Logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="link li-active"><a href="#">Inicio</a></li>
+                    <li class="link"><a href="./pages/events.html">Eventos</a></li>
+                    <li class="link"><a href="./pages/gallery.html">Galería</a></li>
+                    <li class="link"><a href="./pages/about.html">Nosotros</a></li>
+                    <li class="link"><a href="./pages/contact.html">Contacto</a></li>
+                </ul>
+                <a href="https://www.facebook.com/temploSJDSLP">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/sanjuan.dios_slp/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <span class="menu-button" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+            </nav>
+        </header>
+        <main class="home">
+            <div class="home-info">
+                <h1>DONDE HAY <br> CARIDAD Y AMOR...</h1>
+                <h2>ALLÍ ESTA DIOS.</h2>
+            </div>
+        </main>
+    </div>
+
+    <section class="home-news">
+        <div class="home-news-header">
+            <div class="home-news-header-container">
+                <div class="home-news-header-title">
+                    <span><i class="fa-solid fa-newspaper" style="color:white;"></i></span>
+                    <h2>Noticias</h2>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div id="slider">
+            <div class="swiper swiper-news">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-container">
+                        <div class="swiper-img si1">
+                            <div class="swiper-info">
+                                <h3>Kermés con causa</h3>
+                                <hr style="width: 300px; margin-bottom: 10px;">
+                                <p>Habrá venta de antojitos mexicanos, postres, aguas frescas y más.</p>
+                                <div class="swiper-info-text">
+                                    <p>Te esperamos el domingo en el atrio de la iglesia. ¡No faltes!</p>
+                                    <span>Domingo 18 de Julio - Desde las 8:00am hasta las 8:00pm.</span>
+                                    <span>Calle Escobedo #600, San Luis Potosí, Mexico</span>
+                                </div>
+                                <div class="swiper-button">
+                                    <button id="btnSliderOne">Ver más información</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-container slider-revert">
+                        <div class="swiper-img si2">
+                            <div class="swiper-info">
+                                <h3>Bazar de artículos diversos</h3>
+                                <hr style="width: 440px; margin-bottom: 10px;">
+                                <p>Venta de ropa, zapatos, juguetes, pinturas y mucho más a precios bajos.</p>
+                                <div class="swiper-info-text">
+                                    <p> Si tienes algún producto o accesorio que ya no utilices y está en buenas
+                                        condiciones
+                                        puedes donarlo al bazar.</p>
+                                    <p>¡Todo regalo es bien recibido!</p>
+                                    <span>De martes a sabado - Desde las 10:00am hasta 6:00pm
+                                    </span>
+                                    <span>Calle de San Agustin 610, Centro Historico, 78000 San Luis, S.L.P.</span>
+                                </div>
+                                <div class="swiper-button">
+                                    <button id="btnSliderTwo">Ver más información</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-container">
+                        <div class="swiper-img si3">
+                            <div class="swiper-info">
+                                <h3>Dispensario Médico</h3>
+                                <hr style="width: 320px; margin-bottom: 10px;">
+                                <p>Atención médica y medicamento con receta completamente gratuitos.</p>
+                                <div class="swiper-info-text">
+                                    <p>Si tienes mucha necesidad y no cuentas con recursos, acercate sin problema y
+                                        solicita tu consulta. </p>
+                                    <p>Tambien se aceptan donaciones de medicamentos.</p>
+                                    <span>Martes - De 9:00am a 1:00pm y Jueves de 9:00am a 1:00pm - 4:00pm a
+                                        7:00pm</span>
+                                    <span>Calle de San Agustin 610, Centro Historico, 78000 San Luis, S.L.P.</span>
+                                </div>
+                                <div class="swiper-button">
+                                    <button id="btnSliderThree">Ver más información</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-container">
+                        <div class="swiper-img si4">
+                            <div class="swiper-info">
+                                <h3>Tienda de artículos religiosos</h3>
+                                <hr style="width: 480px; margin-bottom: 10px;">
+                                <p>Todo lo que necesitas para nutrir tu fe.</p>
+                                <div class="swiper-info-text">
+                                    <p>Desde escapularios, pulseras, medallas, libros de oraciones, imágenes en bultos,
+                                        cromos, etc.</p>
+                                    <p>Pregunta sin compromiso por lo que necesites.</p>
+                                    <span>De martes a sabado - De 10:00am a 6:00pm
+                                        Lunes y Domingos cerrado</br>
+                                    </span>
+                                    <span>Calle de San Agustin 610, Centro Historico, 78000 San Luis, S.L.P.</span>
+                                </div>
+                                <div class="swiper-button">
+                                    <button id="btnSliderFour">Ver más información</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-container">
+                        <div class="swiper-img si5">
+                            <div class="swiper-info">
+                                <h3>¡Hay feretros y urnas gratis!</h3>
+                                <hr style="width: 450px; margin-bottom: 10px;">
+                                <p>Contamos con un número limitado de féretros y urnas para dar de manera gratuita a
+                                    todo aquel que más lo necesite.</p>
+                                <div class="swiper-info-text">
+                                    <p>Solicitalo directamente en las oficinas de la iglesia.</p>
+                                    <span>Datos e información acerca del poder adquirirlo, se brinda solo en la
+                                        iglesia</br>
+                                    </span>
+                                    <span>De martes a sabado - De 10:00am a 6:00pm</span>
+                                    <span>Calle de San Agustin 610, Centro Historico, 78000 San Luis, S.L.P.</span>
+                                </div>
+                                <div class="swiper-button">
+                                    <button id="btnSliderFive">Ver más información</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-about">
+        <div class="home-about-info">
+            <div class="home-about-img"></div>
+            <div class="home-about-container-text">
+                <div class="home-about-text">
+                    <div class="home-about-header">
+                        <div class="home-about-header-info">
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <h2>Nosotros</h2>
+                        </div>
+                        <hr>
+                    </div>
+                    <p class="home-about-text-p1">Construida a partir del siglo XVII por los religiosos juaninos quienes también construyeron un
+                        hospital al lado contiguo. Desde su fundación se destaca por su deseo de ayudar a la feligresía
+                        no solo a sanar el alma, sino también a curar las enfermedades físicas que acongojan a la
+                        población aledaña.</p><br>
+                    <p>Actualmente quien es capellán de la iglesia es el padre Carlos Jorge García Noyola, quien se ha
+                        encargado desde su llegada de darle un realce a la fachada, arreglar y conservar en buenas
+                        condiciones la edificación del templo y sobre todo buscar bienhechores que deseen de corazón
+                        aportar a la causa para seguir transformando y cuidando el patrimonio historico que representa
+                        hoy en día la Iglesia de San Juan de Dios.</p> <br>
+                    <a href="./pages/about.html">
+                        <button type="button">Conoce más sobre nosotros</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-schedule">
+        <div class="home-schedule-container">
+            <div class="tablas_info">
+                <div class="tablas_info_header">
+                    <div class="tablas_info_title">
+                        <span><i class="fa-solid fa-clock"></i></span>
+                        <h2 class="tablas_titulo">Horario de la Iglesia</h2>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="tablas_contenido">
+                <table class="tabla_misas">
+                    <caption>MISAS</caption>
+                    <thead>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>7:00 am, 12:00 pm y 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>7:00 am, 12:00 pm y 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>7:00 am, 12:00 pm y 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>7:00 am, 12:00 pm y 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>7:00 am, 12:00 pm y 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sabado</td>
+                            <td>7:00 am, 12:00 pm y 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>7:00 am, 8:00 am, 12:00 pm, 1:00 pm, 5:00 pm, 7:00 pm y 8:00 pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="tabla_confesiones">
+                    <caption>CONFESIONES</caption>
+                    <thead>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>6:00 pm - 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>6:00 pm - 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>6:00 pm - 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>6:00 pm - 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>6:00 pm - 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sabado</td>
+                            <td>6:00 pm - 7:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>No hay servicio</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="tablas_img_container">
+                    <img class="tablas_imagen"
+                    src="https://res.cloudinary.com/federicog/image/upload/v1687486641/iglesia-san-juan-de-dios/hands-img_vsgqto.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-events">
+        <div class="home-events-info">
+            <div class="home-events-text">
+                <h2>Eventos</h2>
+                <a href="./pages/events.html">
+                    <button type="button">Ver más</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-gallery">
+        <div class="home-gallery-header">
+            <div class="home-gallery-header-container">
+                <div class="home-gallery-header-info">
+                    <span><i class="fa-regular fa-image"></i></span>
+                    <h2>Galería</h2>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="home-gallery-slider">
+            <div class="swiper swiper-gallery">
+                <div class="swiper-wrapper slider-gallery">
+                    <div class="swiper-slide ss-gallery"></div>
+                    <div class="swiper-slide ss-gallery"></div>
+                    <div class="swiper-slide ss-gallery"></div>
+                    <div class="swiper-slide ss-gallery"></div>
+                    <div class="swiper-slide ss-gallery"></div>
+                    <div class="swiper-slide ss-gallery"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="home-gallery-slider2">
+            <div class="swiper swiper-gallery2">
+                <div class="swiper-wrapper slider-gallery">
+                    <div class="swiper-slide ss-gallery"></div>
+                    <div class="swiper-slide ss-gallery"></div>
+                    <div class="swiper-slide ss-gallery"></div>
+                    <div class="swiper-slide ss-gallery"></div>
+                    <div class="swiper-slide ss-gallery"></div>
+                    <div class="swiper-slide ss-gallery"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <a href="./pages/gallery.html">
+            <button type="button" class="home-gallery-button">Ver la galería completa</button>
+        </a>
+    </section>
+
+    <section class="home-contact">
+        <div class="home-contact-info">
+            <div class="home-contact-text">
+                <div class="home-contact-header">
+                    <div class="home-contact-header-info">
+                        <span><i class="fa-solid fa-location-crosshairs"></i></span>
+                        <h2>Nuestra Ubicación</h2>
+                    </div>
+                    <hr>
+                </div>
+                <div class="home-contact-data">
+                    <span class="home-contact-icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                    <p>Mariano Escobedo Sur n, Centro, 78700 San Luis, S.L.P., México.</p>
+                </div>
+            </div>
+            <div class="home-contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d461.91150670801477!2d-100.974878!3d22.1529523!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa1f8abc4cd01%3A0xc5769d99b9cd28f4!2sIglesia%20San%20Juan%20de%20Dios!5e0!3m2!1ses-419!2suy!4v1686976425977!5m2!1ses-419!2suy"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <a href="#">
+                        <li class="footer-link">Inicio</li>
+                    </a>
+                    <a href="./pages/events.html">
+                        <li class="footer-link">Eventos</li>
+                    </a>
+                    <a href="./pages/gallery.html">
+                        <li class="footer-link">Galería</li>
+                    </a>
+                    <a href="./pages/about.html">
+                        <li class="footer-link">Nosotros</li>
+                    </a>
+                    <a href="./pages/contact.html">
+                        <li class="footer-link">Contacto</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-img">
+                <img src="https://res.cloudinary.com/federicog/image/upload/v1686709408/iglesia-san-juan-de-dios/logo02_vqftik.png"
+                    alt="Logo Iglesia San Juan de Dios">
+            </div>
+            <div class="footer-authors">
+                <div>
+                    <p><span style="color: rgb(190, 189, 189);">Padre</span> <br> Carlos Jorge <br> García Noyola</p>
+                </div>
+                <br>
+                <div>
+                    <p style="color: rgb(190, 189, 189);">Creado por</p>
+                    <span>Amanda Jiménez</span><br>
+                    <span>Federico Gelabert</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright 2023 © Iglesia San Juan de Dios y Nuestra Señora del Rosario</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b91a909361.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/slider-buttons.js"></script>
+    <script src="js/drop-menu.js"></script>
+</body>
+
+</html>
