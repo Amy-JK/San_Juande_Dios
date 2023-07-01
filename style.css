@@ -313,31 +313,38 @@ a {
 }
 
 .si1 {
+    background: linear-gradient(to top, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686619580/iglesia-san-juan-de-dios/gran-kerm%C3%A9s_p5dpjz.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(to top, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686619580/iglesia-san-juan-de-dios/gran-kerm%C3%A9s_p5dpjz.png');
+    background-position: center;
 }
 
 .si2 {
+    background: linear-gradient(to top, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686798566/iglesia-san-juan-de-dios/bazar-img_y3myvr.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(to top, black 10%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686798566/iglesia-san-juan-de-dios/bazar-img_y3myvr.jpg');
+    background-position: center;
 }
 
 .si3 {
     background: linear-gradient(to top, black 5%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686799321/iglesia-san-juan-de-dios/doctor-img_painji.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .si4 {
     background: linear-gradient(to top, black 5%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686800722/iglesia-san-juan-de-dios/tienda-img_k0m7lu.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .si5 {
     background: linear-gradient(to top, black 5%, rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/federicog/image/upload/v1686974926/iglesia-san-juan-de-dios/urnas-img_rjxhsh.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .slider-revert {
@@ -1056,7 +1063,9 @@ caption{
 .about-avatar-img {
     width: 300px;
     height: 300px;
-    background-color: red;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1688184896/iglesia-san-juan-de-dios/padre-img2_y9pgbb.jpg");
+    background-size: cover;
+    background-position: center;
     border: 4px solid white;
     border-radius: 100%;
 }
@@ -1095,9 +1104,10 @@ caption{
 .about-dispensario-img {
     width: 50vw;
     height: 100%;
-    background: url("https://res.cloudinary.com/federicog/image/upload/v1688100168/iglesia-san-juan-de-dios/dispensario-img_kyotmm.jpg");
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1688184794/iglesia-san-juan-de-dios/medication-img_kgubv6.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .about-frase{
@@ -1444,6 +1454,9 @@ caption{
         display: flex;
         justify-content: center;
         width: 80%;
+    }
+    .about-donaciones-img {
+        background-position: bottom;
     }
     
 }
