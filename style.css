@@ -143,7 +143,7 @@
     display: none;
 }
 
-.fa-square-facebook, .fa-instagram, .fa-newspaper, .fa-location-crosshairs, .fa-location-dot, .fa-envelope, .fa-phone, .fa-bars {
+.fa-square-facebook, .fa-instagram, .fa-newspaper, .fa-location-crosshairs, .fa-location-dot, .fa-envelope, .fa-phone, .fa-bars, .fa-calendar-check {
     color: white;
     font-size: 1.4em;
     margin: 5px;
@@ -409,6 +409,177 @@ a {
     padding: 5px;
     background-color: white;
 }
+
+
+
+/* Home - Próximo Evento */
+
+.next-event {
+    color: white;
+    width: 100%;
+    height: 1700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://res.cloudinary.com/federicog/image/upload/v1688259639/iglesia-san-juan-de-dios/cielo-b_mtk64x.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-color: rgba(0, 0, 0, 0.379);
+    background-size: cover;
+}
+
+.next-event-header {
+    height: 160px;
+    width: 100%;
+}
+
+.next-event-header hr {
+    max-width: 280px;
+}
+
+.next-event-header h2 {
+    font-size: 2rem;
+    margin-left: 5px;
+}
+
+.next-event-header-container {
+    padding: 60px 0 0 30px;
+}
+
+.next-event-header-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.next-event-content {
+    border: 6px solid white;
+    width: 85%;
+    height: 1350px;
+    background-color: rgba(0, 0, 0, 0.579);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "next-event-headerContainer next-event-headerContainer next-event-headerContainer next-event-headerContainer"
+      "next-event-firstContainer next-event-firstContainer next-event-secondContainer next-event-secondContainer"
+      "next-event-firstContainer next-event-firstContainer next-event-secondContainer next-event-secondContainer"
+      "next-event-thirdContainer next-event-thirdContainer next-event-fourthContainer next-event-fourthContainer";
+  }
+  
+  .next-event-headerContainer { 
+    grid-area: next-event-headerContainer;
+    height: 220px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left justify;
+    border-bottom: 3px solid white;
+}
+  .next-event-firstContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    grid-area: next-event-firstContainer; 
+}
+
+  .next-event-secondContainer { 
+    height: 600px;
+    grid-area: next-event-secondContainer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .next-event-thirdContainer {
+    height: 500px;
+    grid-area: next-event-thirdContainer;
+}
+
+.next-event-fourthContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    grid-area: next-event-fourthContainer;
+}
+
+.next-event-headerContainer-img {
+    width: 150px;
+}
+
+.next-event-headerContainer img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.next-event-headerContainer-text {
+    width: 50%;
+}
+
+.next-event-headerContainer-text h3 {
+    text-decoration: underline;
+}
+
+.next-event-firstContainer-text {
+    width: 80%;
+}
+
+.next-event-secondContainer-img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.next-event-secondContainer-img img {
+    object-fit: contain;
+    width: 80%;
+    height: 90%;
+}
+
+.next-event-secondContainer-img p {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.next-event-thirdContainer-img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.next-event-thirdContainer-img a, .next-event-thirdContainer-img img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.next-event-fourthContainer-recommendations, .next-event-fourthContainer-restrictions {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+}
+
+.next-event-fourthContainer-recommendations h3, .next-event-fourthContainer-restrictions h3 {
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.next-event-fourthContainer-recommendations ul, .next-event-fourthContainer-restrictions ul {
+    width: 80%;
+}
+
+
+
 
 /* Home - Nosotros / Nosotros */
 
@@ -1048,7 +1219,7 @@ caption{
 
 .about-avatar {
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1458,7 +1629,6 @@ caption{
     .about-donaciones-img {
         background-position: bottom;
     }
-    
 }
 
 @media (max-width: 900px) {
@@ -1513,12 +1683,47 @@ caption{
     }
     .about-avatar {
         flex-direction: column;
-        height: 600px;
+        height: 900px;
     }
     .about-avatar-info {
         margin-left: 0;
         margin-top: 50px;
         width: 50%;
+    }
+    .next-event {
+        height: 3200px;
+    }
+    .next-event-content {
+        height: 2900px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "next-event-headerContainer next-event-headerContainer next-event-headerContainer next-event-headerContainer"
+          "next-event-firstContainer next-event-firstContainer next-event-firstContainer next-event-firstContainer"
+          "next-event-secondContainer next-event-secondContainer next-event-secondContainer next-event-secondContainer"
+          "next-event-fourthContainer next-event-fourthContainer next-event-fourthContainer next-event-fourthContainer"
+          "next-event-thirdContainer next-event-thirdContainer next-event-thirdContainer next-event-thirdContainer";
+    }
+
+    .next-event-headerContainer {
+        height: 300px;
+    }
+    .next-event-secondContainer-img {
+        height: auto;
+    }
+    .next-event-firstContainer {
+        height: 700px;
+    }
+    
+      .next-event-secondContainer { 
+        height: 700px;
+    }
+      .next-event-thirdContainer {
+        height: 600px;
+    }
+    
+    .next-event-fourthContainer {
+        height: 600px;
     }
 }
 
@@ -1626,7 +1831,7 @@ caption{
     }
     .about-avatar {
         flex-direction: column;
-        height: 700px;
+        height: 900px;
     }
     .about-avatar-info {
         margin-left: 0;
@@ -1635,6 +1840,22 @@ caption{
     }
     .about-donaciones-info, .about-dispensario-info, .about-despensas-info {
         height: 1350px;
+    }
+    .next-event-headerContainer {
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .next-event-headerContainer-text {
+        padding-top: 30px;
+        width: 80%;
+    }
+    .next-event {
+        height: 3500px;
+    }
+    .next-event-content {
+        height: 3200px;
     }
 }
 
@@ -1702,6 +1923,24 @@ caption{
     }
     .about-donaciones-info, .about-dispensario-info, .about-despensas-info {
         height: 1800px;
+    }
+    .next-event-headerContainer {
+        height: 650px;
+    }
+    .next-event-firstContainer {
+        height: 850px;
+    }
+    .next-event-secondContainer {
+        height: 300px;
+    }
+    .next-event-fourthContainer {
+        height: 400px;
+    }
+    .next-event {
+        height: 3100px;
+    }
+    .next-event-content {
+        height: 2900px;
     }
 }
 
