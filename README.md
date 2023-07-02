@@ -11,7 +11,7 @@ https://san-juande-dios.netlify.app/
 ### Installation
 
 ```
-git clone https://github.com/FedericoGelabert/Project-ReactJS.git
+git clone https://github.com/Amy-JK/San_Juande_Dios.git
 ```
 
 
