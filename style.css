@@ -1575,6 +1575,9 @@ caption{
     .main-header-b, .events-main-header-b, .gallery-main-header-b, .about-main-header-b, .contact-main-header-b {
         background: none;
     }
+    .home h1 {
+        font-size: 4rem;
+    }
     .home {
         background: url("https://res.cloudinary.com/federicog/image/upload/v1686709279/iglesia-san-juan-de-dios/main-b_vaukcu.jpg");
         background-color: rgba(0, 0, 0, 0.379);
@@ -1582,6 +1585,7 @@ caption{
         background-size: cover;
         background-repeat: no-repeat;
     }
+    
     .events-main {
         background: url("https://res.cloudinary.com/federicog/image/upload/v1687061926/iglesia-san-juan-de-dios/rosario-b_wpeazr.jpg");
         background-color: rgba(0, 0, 0, 0.379);
@@ -1652,6 +1656,9 @@ caption{
     }
     .home-schedule-container {
         height: 1200px;
+    }
+    .home h1 {
+        font-size: 3rem;
     }
     .tablas_contenido {
         flex-direction: column;
@@ -1815,7 +1822,10 @@ caption{
         height: 950px;
     }
     .warn-free {
-        height: 200px;
+        height: 160px;
+    }
+    .warn-free p {
+        font-size: 0.9rem;
     }
     .map {
         width: 80%;
@@ -1888,7 +1898,7 @@ caption{
         height: 350px;
     }
     .home h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
     .tablas_titulo {
         font-size: 1.3rem;
@@ -1941,6 +1951,13 @@ caption{
     }
     .next-event-content {
         height: 2900px;
+    }
+    .presentacion-container {
+        background-position-x: -150px;
+    }
+    
+    .primeraComunion-container {
+        background-position-x: -150px;
     }
 }
 
